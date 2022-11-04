@@ -59,32 +59,32 @@ organizzare i singoli membri in card/schede
 const team =
 [
     {
-      name: 'Toto1',
+      name: 'Wayne Barnett',
       role: 'Founder & CEO',
       image: './assets/img/wayne-barnett-founder-ceo.jpg',
     },
     {
-      name: 'Toto2',
+      name: 'Angela Caroll',
       role: 'Chief Editor',
       image: './assets/img/angela-caroll-chief-editor.jpg',
     },
     {
-      name: 'Toto3',
+      name: 'Walter Gordon',
       role: 'Office Manager',
       image: './assets/img/walter-gordon-office-manager.jpg',
     },
     {
-      name: 'Toto4',
+      name: 'Angela Lopez',
       role: 'Social Media Manager',
       image: './assets/img/angela-lopez-social-media-manager.jpg',
     },
     {
-      name: 'Toto5',
+      name: 'Scott Estrada',
       role: 'Developer',
       image: './assets/img/scott-estrada-developer.jpg',
     },
     {
-      name: 'Toto6',
+      name: 'Barbara Ramos',
       role: 'Graphic Designer',
       image: './assets/img/barbara-ramos-graphic-designer.jpg',
     },
@@ -109,7 +109,7 @@ for(let i=0; i<team.length; i++)
     document.getElementById('area_carte').innerHTML +=
     `
 
-        <div class="card" style="width: 18rem;">
+        <div class="card pt-3 mx-3 mt-3 mb-md-3" style="width: 18rem;">
             <img src="${team[i].image}" class="card-img-top">
             <div class="card-body text-center">
             <h6 class="card-title">${team[i].name}</h6>
