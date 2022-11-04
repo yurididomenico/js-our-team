@@ -61,32 +61,32 @@ const team =
     {
       name: 'Toto1',
       role: 'Founder & CEO',
-      image: '../img/wayne-barnett-founder-ceo.jpg',
+      image: './assets/img/wayne-barnett-founder-ceo.jpg',
     },
     {
       name: 'Toto2',
       role: 'Chief Editor',
-      image: '../img/angela-caroll-chief-editor.jpg',
+      image: './assets/img/angela-caroll-chief-editor.jpg',
     },
     {
       name: 'Toto3',
       role: 'Office Manager',
-      image: '../img/walter-gordon-office-manager.jpg',
+      image: './assets/img/walter-gordon-office-manager.jpg',
     },
     {
       name: 'Toto4',
       role: 'Social Media Manager',
-      image: '../img/angela-lopez-social-media-manager.jpg',
+      image: './assets/img/angela-lopez-social-media-manager.jpg',
     },
     {
       name: 'Toto5',
       role: 'Developer',
-      image: '../img/scott-estrada-developer.jpg',
+      image: './assets/img/scott-estrada-developer.jpg',
     },
     {
       name: 'Toto6',
       role: 'Graphic Designer',
-      image: '../img/barbara-ramos-graphic-designer.jpg',
+      image: './assets/img/barbara-ramos-graphic-designer.jpg',
     },
 ];
 
@@ -101,6 +101,25 @@ for(let i=0; i<team.length; i++)
 }
 
 
+
+//Stampa su DOM
+for(let i=0; i<team.length; i++)
+{
+    let oggetti = team[i];
+
+    document.getElementById('area_carte').innerHTML +=
+    `
+
+        <div class="card" style="width: 18rem;">
+            <img src="${team[i].image}" class="card-img-top">
+            <div class="card-body text-center">
+            <h6 class="card-title">${team[i].name}</h6>
+            <p class="card-text font-size-08">${team[i].role}</p>
+        </div>
+    </div>
+
+    `
+}
 
 
 
