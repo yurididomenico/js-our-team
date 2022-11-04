@@ -105,8 +105,7 @@ for(let i=0; i<team.length; i++)
 //Stampa su DOM
 for(let i=0; i<team.length; i++)
 {
-    let oggetti = team[i];
-
+    
     document.getElementById('area_carte').innerHTML +=
     `
 
@@ -117,7 +116,6 @@ for(let i=0; i<team.length; i++)
             <p class="card-text font-size-08">${team[i].role}</p>
         </div>
     </div>
-
     `
 }
 
