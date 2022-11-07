@@ -90,34 +90,50 @@ const team =
     },
 ];
 
-
-//Stampa su console
-for(let i=0; i<team.length; i++)
+team.forEach((elemento) =>
 {
-    console.log(team[i].name)
-    console.log(team[i].role)
-    console.log(team[i].image)
-    console.log("")
-}
+  console.log(`Nome: ${elemento.name}`)
+  console.log(`Ruolo: ${elemento.role}`)
+
+  document.getElementById('area_carte').innerHTML +=
+  `
+      <div class="card pt-3 mx-3 mt-3 mb-md-3" style="width: 18rem;">
+          <img src="${elemento.image}" class="card-img-top">
+          <div class="card-body text-center">
+          <h6 class="card-title">${elemento.name}</h6>
+          <p class="card-text font-size-08">${elemento.role}</p>
+      </div>
+  </div>
+  `
+})
+
+// //Stampa su console
+// for(let i=0; i<team.length; i++)
+// {
+//     console.log(team[i].name)
+//     console.log(team[i].role)
+//     console.log(team[i].image)
+//     console.log("")
+// }
 
 
 
-//Stampa su DOM
-for(let i=0; i<team.length; i++)
-{
+// //Stampa su DOM
+// for(let i=0; i<team.length; i++)
+// {
     
-    document.getElementById('area_carte').innerHTML +=
-    `
+//     document.getElementById('area_carte').innerHTML +=
+//     `
 
-        <div class="card pt-3 mx-3 mt-3 mb-md-3" style="width: 18rem;">
-            <img src="${team[i].image}" class="card-img-top">
-            <div class="card-body text-center">
-            <h6 class="card-title">${team[i].name}</h6>
-            <p class="card-text font-size-08">${team[i].role}</p>
-        </div>
-    </div>
-    `
-}
+//         <div class="card pt-3 mx-3 mt-3 mb-md-3" style="width: 18rem;">
+//             <img src="${team[i].image}" class="card-img-top">
+//             <div class="card-body text-center">
+//             <h6 class="card-title">${team[i].name}</h6>
+//             <p class="card-text font-size-08">${team[i].role}</p>
+//         </div>
+//     </div>
+//     `
+// }
 
 
 
